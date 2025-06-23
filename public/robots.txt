@@ -1,0 +1,25 @@
+# Robots.txt for Launchly
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://launchly.isoguv.dev/sitemap.xml
+
+# Crawl delay for better server performance
+Crawl-delay: 1
+
+# Block unnecessary crawling of assets
+Disallow: /src/
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.map$
+
+# Allow important social media crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
